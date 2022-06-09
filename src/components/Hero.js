@@ -20,6 +20,17 @@ const Hero = () => {
 						I am focused on building responsive front-end web applications while
 						learning back-end technologies.
 					</p>
+
+					<a
+						className='rounded-full shadow-lg shadow-[#5651e5] p-4  my-4 inline-block border border-gray-400 text-[#5651e5] hover:scale-105 hover:bg-[#5651e5] hover:text-[#fff] hover:shadow-gray-400 ease-in duration-500 font-bold'
+						target='_blank'
+						href='https://drive.google.com/file/d/1m5W3GYbvoAX-vyucBMnl7gJgS5tL_0tN/view?usp=sharing'
+						title=''
+						download=''
+					>
+						Download Resume
+					</a>
+
 					<div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
 						<div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-500'>
 							<FaLinkedinIn />
