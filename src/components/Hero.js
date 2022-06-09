@@ -1,7 +1,6 @@
 import { AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { Link } from "react-router-dom";
 
 const Hero = () => {
 	return (
@@ -21,15 +20,11 @@ const Hero = () => {
 						I am focused on building responsive front-end web applications while
 						learning back-end technologies.
 					</p>
-					<div className='flex items-center justify-center max-w-[330px] m-auto py-4'>
-						<Link
-							to={{ pathname: `www.linkedin.com/in/sarkerpabon` }}
-							target='_blank'
-						>
-							<div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-500'>
-								<FaLinkedinIn />
-							</div>
-						</Link>
+					<div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
+						<div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-500'>
+							<FaLinkedinIn />
+						</div>
+
 						<div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-500'>
 							<FaGithub />
 						</div>
