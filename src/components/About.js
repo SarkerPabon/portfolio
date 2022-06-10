@@ -1,5 +1,3 @@
-import React from "react";
-
 const About = () => {
 	return (
 		<div id='about' className='w-full md:h-screen p-2 flex items-center py-16'>
@@ -10,7 +8,7 @@ const About = () => {
 					</p>
 					<h2 className='py-4'>Who I Am</h2>
 					<p className='py-2 text-gray-600'>
-						// I am not your average developer
+						\\ I am not your average developer
 					</p>
 					<p className='py-2 text-gray-600'>
 						I have spent the last 12 years in the fire service working as a

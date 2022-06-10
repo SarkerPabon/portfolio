@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
@@ -39,8 +39,8 @@ const Contact = () => {
 								/>
 							</div>
 							<div>
-								<h2 className='py-2'>Clint Briley</h2>
-								<p>Front-End Developer</p>
+								<h2 className='py-2'>Pabon Sarker</h2>
+								<p>Full Stack Developer</p>
 								<p className='py-4'>
 									I am available for freelance or full-time positions. Contact
 									me and let's talk.
@@ -52,12 +52,17 @@ const Contact = () => {
 									<a
 										href='https://www.linkedin.com/in/clint-briley-50056920a/'
 										target='_blank'
+										rel='noopener noreferrer'
 									>
 										<div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
 											<FaLinkedinIn />
 										</div>
 									</a>
-									<a href='https://github.com/fireclint' target='_blank'>
+									<a
+										href='https://github.com/fireclint'
+										target='_blank'
+										rel='noopener noreferrer'
+									>
 										<div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
 											<FaGithub />
 										</div>
