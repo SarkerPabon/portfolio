@@ -1,10 +1,36 @@
+import { useEffect, useRef, useState } from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import CLOUDS from "vanta/dist/vanta.clouds.min";
 
 const Hero = () => {
+	const [vantaEffect, setVantaEffect] = useState(0);
+	const myRef = useRef(null);
+
+	useEffect(() => {
+		if (!vantaEffect) {
+			setVantaEffect(
+				CLOUDS({
+					el: myRef.current,
+					mouseControls: true,
+					touchControls: true,
+					gyroControls: false,
+					minHeight: 200.0,
+					minWidth: 200.0,
+					skyColor: 0xcee0e8,
+					cloudColor: 0xb5beca,
+					speed: 0.4,
+				})
+			);
+		}
+		return () => {
+			if (vantaEffect) vantaEffect.destroy();
+		};
+	}, [vantaEffect]);
+
 	return (
-		<div className='w-full h-screen text-center'>
+		<div ref={myRef} id='hero' className='w-full h-screen text-center'>
 			<div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'>
 				<div>
 					<p className='uppercase text-sm tracking-widest to-gray-600'>
@@ -33,17 +59,17 @@ const Hero = () => {
 					</a>
 
 					<div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
-						<div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-500'>
+						<div className='rounded-full shadow-lg text-[#5651e5] shadow-[#5651e5] p-6 cursor-pointer hover:scale-110 ease-in duration-500'>
 							<FaLinkedinIn />
 						</div>
 
-						<div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-500'>
+						<div className='rounded-full shadow-lg text-[#5651e5] shadow-[#5651e5] p-6 cursor-pointer hover:scale-110 ease-in duration-500'>
 							<FaGithub />
 						</div>
-						<div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-500'>
+						<div className='rounded-full shadow-lg text-[#5651e5] shadow-[#5651e5] p-6 cursor-pointer hover:scale-110 ease-in duration-500'>
 							<AiOutlineMail />
 						</div>
-						<div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-500'>
+						<div className='rounded-full shadow-lg text-[#5651e5] shadow-[#5651e5] p-6 cursor-pointer hover:scale-110 ease-in duration-500'>
 							<BsFillPersonLinesFill />
 						</div>
 					</div>

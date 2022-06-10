@@ -97,19 +97,29 @@ const Navbar = () => {
 						<div className='py-4 flex flex-col'>
 							<ul className='uppercase'>
 								<HashLink smooth to='/#'>
-									<li className='py-4 text-sm'>Home</li>
+									<li onClick={() => setNav(false)} className='py-4 text-sm'>
+										Home
+									</li>
 								</HashLink>
 								<HashLink smooth to='/#about'>
-									<li className='py-4 text-sm'>About</li>
+									<li onClick={() => setNav(false)} className='py-4 text-sm'>
+										About
+									</li>
 								</HashLink>
 								<HashLink smooth to='/#skills'>
-									<li className='py-4 text-sm'>Skills</li>
+									<li onClick={() => setNav(false)} className='py-4 text-sm'>
+										Skills
+									</li>
 								</HashLink>
 								<HashLink smooth to='/#projects'>
-									<li className='py-4 text-sm'>Porjects</li>
+									<li onClick={() => setNav(false)} className='py-4 text-sm'>
+										Porjects
+									</li>
 								</HashLink>
 								<HashLink smooth to='/#contact'>
-									<li className='py-4 text-sm'>Contact</li>
+									<li onClick={() => setNav(false)} className='py-4 text-sm'>
+										Contact
+									</li>
 								</HashLink>
 							</ul>
 							<div className='pt-5'>
@@ -133,6 +143,18 @@ const Navbar = () => {
 							</div>
 						</div>
 					</div>
+				</div>
+			</div>
+
+			<div className='hidden md:block fixed bottom-[90px] right-6 w-[40px]'>
+				<div className='flex flex-col items-center relative'>
+					<a
+						className='my-6 mx-auto text-base font-mono tracking-widest ease-in duration-300 hover:text-[#e3573c] after:content-[""] after:block after:w-[1px] after:h-[90px] after:my-0 after:mx-auto after:bg-gray-700  after:fixed after:bottom-0 after:right-11 after:hover:bg-[#e3573c]'
+						href='mailto:sarkerpabon@gmail.com'
+						style={{ writingMode: "vertical-rl" }}
+					>
+						sarkerpabon@gmail.com
+					</a>
 				</div>
 			</div>
 		</div>
