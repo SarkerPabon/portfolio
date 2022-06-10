@@ -1,44 +1,60 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 
 const Navbar = () => {
 	const [nav, setNav] = useState(false);
+
+	const [shadow, setShadow] = useState(false);
 
 	const handleNav = () => {
 		setNav(!nav);
 	};
 
+	useEffect(() => {
+		const handleShadow = () => {
+			if (window.scrollY >= 90) {
+				setShadow(true);
+			} else {
+				setShadow(false);
+			}
+		};
+		window.addEventListener("scroll", handleShadow);
+	}, []);
+
 	return (
-		<div className='fixed w-full h-20 shadow-xl z-[100] ease-in-out duration-300'>
+		<div
+			className={
+				shadow
+					? "fixed w-full h-20 shadow-xl z-[100] ease-in-out duration-300"
+					: "fixed w-full h-20 z-[100]"
+			}
+		>
 			<div className='flex justify-between items-center w-full h-full px-2 2xl:px-16 container mx-auto'>
 				<img src='/assets/logo2.png' alt='Logo' width={100} height={50} />
 				<div>
 					<ul className='hidden md:flex'>
-						<Link to='/'>
+						<HashLink smooth to='/#'>
 							<li className='ml-10 text-sm uppercase hover:border-b'>Home</li>
-						</Link>
-						<Link to='/#about'>
+						</HashLink>
+						<HashLink smooth to='/#about'>
 							<li className='ml-10 text-sm uppercase hover:border-b'>About</li>
-						</Link>
-						<Link to='/#skills'>
+						</HashLink>
+						<HashLink smooth to='/#skills'>
 							<li className='ml-10 text-sm uppercase hover:border-b'>Skills</li>
-						</Link>
-						<Link to='/#projects'>
+						</HashLink>
+						<HashLink smooth to='/#projects'>
 							<li className='ml-10 text-sm uppercase hover:border-b'>
 								Projects
 							</li>
-						</Link>
-						<Link to='/#resume'>
-							<li className='ml-10 text-sm uppercase hover:border-b'>Resume</li>
-						</Link>
-						<Link to='/#contact'>
+						</HashLink>
+						<HashLink smooth to='/#contact'>
 							<li className='ml-10 text-sm uppercase hover:border-b'>
 								Contact
 							</li>
-						</Link>
+						</HashLink>
 					</ul>
 
 					{/* Hamburger Icon */}
@@ -65,12 +81,7 @@ const Navbar = () => {
 				>
 					<div>
 						<div className='flex justify-between items-center'>
-							<img
-								src='/assets/navLogo.png'
-								alt='Logo'
-								width={87}
-								height={35}
-							/>
+							<img src='/assets/logo2.png' alt='Logo' width={87} height={35} />
 							<div
 								onClick={handleNav}
 								className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer'
@@ -85,21 +96,21 @@ const Navbar = () => {
 						</div>
 						<div className='py-4 flex flex-col'>
 							<ul className='uppercase'>
-								<Link to='/'>
+								<HashLink smooth to='/#'>
 									<li className='py-4 text-sm'>Home</li>
-								</Link>
-								<Link to='/'>
+								</HashLink>
+								<HashLink smooth to='/#about'>
 									<li className='py-4 text-sm'>About</li>
-								</Link>
-								<Link to='/'>
+								</HashLink>
+								<HashLink smooth to='/#skills'>
 									<li className='py-4 text-sm'>Skills</li>
-								</Link>
-								<Link to='/'>
+								</HashLink>
+								<HashLink smooth to='/#projects'>
 									<li className='py-4 text-sm'>Porjects</li>
-								</Link>
-								<Link to='/'>
+								</HashLink>
+								<HashLink smooth to='/#contact'>
 									<li className='py-4 text-sm'>Contact</li>
-								</Link>
+								</HashLink>
 							</ul>
 							<div className='pt-5'>
 								<p className='uppercase tracking-wide text-[#5651e5] text-center'>
