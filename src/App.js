@@ -1,8 +1,8 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Navbar from "./components/Navbar";
+import Error from "./Page/404";
 import Blog from "./Page/Blog";
-import Error from "./Page/Error";
 import Main from "./Page/Main";
 
 function App() {

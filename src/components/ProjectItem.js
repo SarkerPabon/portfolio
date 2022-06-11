@@ -52,13 +52,16 @@ const ProjectItem = ({
 							""
 						)}
 						{client ? (
-							<button
+							<a
+								href={client}
+								target='_blank'
+								rel='noreferrer'
 								type='button'
 								className='text-sm bg-white text-gray-700 p-2 font-bold cursor-pointer rounded-lg'
 							>
 								Client
 								<FiExternalLink className='text-sm ml-1 inline mb-1' />
-							</button>
+							</a>
 						) : (
 							""
 						)}

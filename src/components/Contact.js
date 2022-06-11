@@ -1,9 +1,8 @@
 import { useState } from "react";
 import { AiOutlineMail } from "react-icons/ai";
-import { BsFillPersonLinesFill } from "react-icons/bs";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+// import { BsFillPersonLinesFill } from "react-icons/bs";
+import { FaFacebookSquare, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
-import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
 const Contact = () => {
@@ -51,32 +50,41 @@ const Contact = () => {
 								<p className='uppercase pt-8'>Connect With Me</p>
 								<div className='flex items-center justify-between py-4'>
 									<a
-										href='https://www.linkedin.com/in/clint-briley-50056920a/'
+										href='https://www.linkedin.com/in/sarkerpabon/'
 										target='_blank'
-										rel='noopener noreferrer'
+										rel='noreferrer'
 									>
 										<div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
 											<FaLinkedinIn />
 										</div>
 									</a>
 									<a
-										href='https://github.com/fireclint'
+										href='https://github.com/sarkerpabon'
 										target='_blank'
-										rel='noopener noreferrer'
+										rel='noreferrer'
 									>
 										<div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
 											<FaGithub />
 										</div>
 									</a>
 
-									<div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
+									<a
+										href='mailto:sarkerpabon@gmail.com'
+										target='_blank'
+										rel='noreferrer'
+										className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'
+									>
 										<AiOutlineMail />
-									</div>
-									<Link to='/resume'>
+									</a>
+									<a
+										href='https://www.facebook.com/sarkerpabon'
+										target='_blank'
+										rel='noreferrer'
+									>
 										<div className='rounded-full shadow-lg shadow-gray-400 p-6 cursor-pointer hover:scale-110 ease-in duration-300'>
-											<BsFillPersonLinesFill />
+											<FaFacebookSquare />
 										</div>
-									</Link>
+									</a>
 								</div>
 							</div>
 						</div>

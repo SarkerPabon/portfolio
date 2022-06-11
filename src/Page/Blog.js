@@ -1,6 +1,4 @@
-import { AiOutlineMail } from "react-icons/ai";
-import { BsFillPersonLinesFill } from "react-icons/bs";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import Social from "../components/Social";
 
 const Blog = () => {
 	return (
@@ -19,19 +17,7 @@ const Blog = () => {
 					</div>
 
 					<div className='flex items-center justify-between max-w-[330px] m-auto py-4 mt-32'>
-						<div className='border border-[#e3573c] rounded-full shadow-lg text-[#e3573c] shadow-[#e3573c] p-6 cursor-pointer hover:scale-110 ease-in duration-500'>
-							<FaLinkedinIn />
-						</div>
-
-						<div className='border border-[#e3573c] rounded-full shadow-lg text-[#e3573c] shadow-[#e3573c] p-6 cursor-pointer hover:scale-110 ease-in duration-500'>
-							<FaGithub />
-						</div>
-						<div className='border border-[#e3573c] rounded-full shadow-lg text-[#e3573c] shadow-[#e3573c] p-6 cursor-pointer hover:scale-110 ease-in duration-500'>
-							<AiOutlineMail />
-						</div>
-						<div className='border border-[#e3573c] rounded-full shadow-lg text-[#e3573c] shadow-[#e3573c] p-6 cursor-pointer hover:scale-110 ease-in duration-500'>
-							<BsFillPersonLinesFill />
-						</div>
+						<Social />
 					</div>
 				</div>
 			</div>

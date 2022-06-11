@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
-import { BsFillPersonLinesFill } from "react-icons/bs";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+// import { BsFillPersonLinesFill } from "react-icons/bs";
+import { FaGithub, FaLinkedinIn, FaFacebookSquare } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
@@ -69,6 +69,16 @@ const Navbar = () => {
 								Blog
 							</li>
 						</Link>
+						<a
+							href='https://drive.google.com/file/d/1m5W3GYbvoAX-vyucBMnl7gJgS5tL_0tN/view?usp=sharing'
+							target='_blank'
+							rel='noreferrer'
+							className=''
+						>
+							<li className='border border-[#e3573c] rounded-lg px-4 text-[#e3573c] ml-10 text-sm uppercase hover:border-b hover:border-[#e3573c] hover:text-[#e3573c] ease-in duration-300'>
+								Resume
+							</li>
+						</a>
 					</ul>
 
 					{/* Hamburger Icon */}
@@ -113,7 +123,7 @@ const Navbar = () => {
 								<HashLink smooth to='/#'>
 									<li
 										onClick={() => setNav(false)}
-										className='py-4 text-sm hover:text-[#e3573c] ease-in duration-200'
+										className='py-3 text-sm hover:text-[#e3573c] ease-in duration-200'
 									>
 										Home
 									</li>
@@ -121,7 +131,7 @@ const Navbar = () => {
 								<HashLink smooth to='/#about'>
 									<li
 										onClick={() => setNav(false)}
-										className='py-4 text-sm hover:text-[#e3573c] ease-in duration-200'
+										className='py-3 text-sm hover:text-[#e3573c] ease-in duration-200'
 									>
 										About
 									</li>
@@ -129,7 +139,7 @@ const Navbar = () => {
 								<HashLink smooth to='/#skills'>
 									<li
 										onClick={() => setNav(false)}
-										className='py-4 text-sm hover:text-[#e3573c] ease-in duration-200'
+										className='py-3 text-sm hover:text-[#e3573c] ease-in duration-200'
 									>
 										Skills
 									</li>
@@ -137,7 +147,7 @@ const Navbar = () => {
 								<HashLink smooth to='/#projects'>
 									<li
 										onClick={() => setNav(false)}
-										className='py-4 text-sm hover:text-[#e3573c] ease-in duration-200'
+										className='py-3 text-sm hover:text-[#e3573c] ease-in duration-200'
 									>
 										Porjects
 									</li>
@@ -145,29 +155,69 @@ const Navbar = () => {
 								<HashLink smooth to='/#contact'>
 									<li
 										onClick={() => setNav(false)}
-										className='py-4 text-sm hover:text-[#e3573c] ease-in duration-200'
+										className='py-3 text-sm hover:text-[#e3573c] ease-in duration-200'
 									>
 										Contact
 									</li>
 								</HashLink>
+								<Link to='/blog'>
+									<li
+										onClick={() => setNav(false)}
+										className='py-3 text-sm hover:text-[#e3573c] ease-in duration-200'
+									>
+										Blog
+									</li>
+								</Link>
+								<a
+									href='https://drive.google.com/file/d/1m5W3GYbvoAX-vyucBMnl7gJgS5tL_0tN/view?usp=sharing'
+									target='_blank'
+									rel='noreferrer'
+								>
+									<li
+										onClick={() => setNav(false)}
+										className='py-3 text-sm hover:text-[#e3573c] ease-in duration-200'
+									>
+										Resume
+									</li>
+								</a>
 							</ul>
 							<div className='pt-5'>
 								<p className='uppercase tracking-wide text-[#5651e5] text-center'>
 									Let's Connect
 								</p>
 								<div className='flex items-center justify-between my-4 w-full sm:w-[80%] mx-auto'>
-									<div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-500'>
+									<a
+										href='https://www.linkedin.com/in/sarkerpabon/'
+										target='_blank'
+										rel='noreferrer'
+										className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-500'
+									>
 										<FaLinkedinIn />
-									</div>
-									<div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-500'>
+									</a>
+									<a
+										href='https://github.com/sarkerpabon'
+										target='_blank'
+										rel='noreferrer'
+										className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-500'
+									>
 										<FaGithub />
-									</div>
-									<div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-500'>
+									</a>
+									<a
+										href='mailto:sarkerpabon@gmail.com'
+										target='_blank'
+										rel='noreferrer'
+										className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-500'
+									>
 										<AiOutlineMail />
-									</div>
-									<div className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-500'>
-										<BsFillPersonLinesFill />
-									</div>
+									</a>
+									<a
+										href='https://www.facebook.com/sarkerpabon'
+										target='_blank'
+										rel='noreferrer'
+										className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-500'
+									>
+										<FaFacebookSquare />
+									</a>
 								</div>
 							</div>
 						</div>

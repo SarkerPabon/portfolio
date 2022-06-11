@@ -36,13 +36,19 @@ const Projects = () => {
 									</div>
 
 									<div className='mr-2 mb-2 rounded-full px-3 py-1 text-xs bg-green-400 text-green-900 font-bold'>
+										Stripe
+									</div>
+
+									<div className='mr-2 mb-2 rounded-full px-3 py-1 text-xs bg-green-400 text-green-900 font-bold'>
 										Tailwind CSS
 									</div>
 								</div>
 
 								<p className='text-base  '>
-									This revolutionary email design kit is going to transform the
-									way in which you send modern emails.
+									This application mainly focused to maintain wearhouse items
+									organization. We can see how many item sold and how many left.
+									We can add and delete item. We can also see who add how many
+									items.
 								</p>
 
 								<ul className='text-sm mt-4 list-disc list-inside leading-relaxed'>
@@ -87,17 +93,14 @@ const Projects = () => {
 									</div>
 
 									<div className='mr-2 mb-2 rounded-full px-3 py-1 text-xs bg-green-400 text-green-900 font-bold'>
-										JWT Authentication
-									</div>
-
-									<div className='mr-2 mb-2 rounded-full px-3 py-1 text-xs bg-green-400 text-green-900 font-bold'>
-										Tailwind CSS
+										BootStrap 5
 									</div>
 								</div>
 
 								<p className='text-base  '>
-									This revolutionary email design kit is going to transform the
-									way in which you send modern emails.
+									This application mainly focused to independent service
+									provider like Dentist. Here we can book appointment and user
+									can login through email or google authentication system.
 								</p>
 
 								<ul className='text-sm mt-4 list-disc list-inside leading-relaxed'>
@@ -106,14 +109,9 @@ const Projects = () => {
 										authenticate system
 									</li>
 
-									<li>
-										User can browse product list, maintaine the cart like add
-										and delete their choosen products
-									</li>
+									<li>User can book their service</li>
 
-									<li>
-										User can add product, update and delivered their product
-									</li>
+									<li>The site have protected route system</li>
 								</ul>
 							</div>
 						</div>
@@ -138,11 +136,15 @@ const Projects = () => {
 									</div>
 
 									<div className='mr-2 mb-2 rounded-full px-3 py-1 text-xs bg-green-400 text-green-900 font-bold'>
-										Firebase Auth
+										Siwpper.JS
 									</div>
 
 									<div className='mr-2 mb-2 rounded-full px-3 py-1 text-xs bg-green-400 text-green-900 font-bold'>
-										JWT Authentication
+										Leaflet JS
+									</div>
+
+									<div className='mr-2 mb-2 rounded-full px-3 py-1 text-xs bg-green-400 text-green-900 font-bold'>
+										Siwpper JS
 									</div>
 
 									<div className='mr-2 mb-2 rounded-full px-3 py-1 text-xs bg-green-400 text-green-900 font-bold'>
@@ -151,24 +153,18 @@ const Projects = () => {
 								</div>
 
 								<p className='text-base  '>
-									This revolutionary email design kit is going to transform the
-									way in which you send modern emails.
+									This is a simple landing page. The page mady by Tailwind CSS.
+									Here Siwper.JS is used for slider.
 								</p>
 
 								<ul className='text-sm mt-4 list-disc list-inside leading-relaxed'>
 									<li>
-										User can authenticate by Email and/or Google based
-										authenticate system
+										Fully Responsive website for Desktop, Tabs and Laptops
 									</li>
 
-									<li>
-										User can browse product list, maintaine the cart like add
-										and delete their choosen products
-									</li>
+									<li>This website has busness summary section</li>
 
-									<li>
-										User can add product, update and delivered their product
-									</li>
+									<li>This website has google map</li>
 								</ul>
 							</div>
 						</div>

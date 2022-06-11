@@ -1,8 +1,6 @@
 import { useEffect, useRef, useState } from "react";
-import { AiOutlineMail } from "react-icons/ai";
-import { BsFillPersonLinesFill } from "react-icons/bs";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import CLOUDS from "vanta/dist/vanta.clouds.min";
+import Social from "./Social";
 
 const Hero = () => {
 	const [vantaEffect, setVantaEffect] = useState(0);
@@ -32,7 +30,7 @@ const Hero = () => {
 	return (
 		<div ref={myRef} id='hero' className='w-full h-screen text-center'>
 			<div className='max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center'>
-				<div>
+				<div className='mt-10'>
 					<p className='uppercase text-sm tracking-widest to-gray-600'>
 						LET'S BUILD SOMETHING TOGETHER
 					</p>
@@ -43,14 +41,14 @@ const Hero = () => {
 					<p className='py-4 text-gray-600 max-w-[70%] mx-auto '>
 						I am a full-stack (MERN) web developer specializing in building
 						exceptional digital experiences. Currently, I am focused on building
-						responsive front-end web applications while learning back-end
-						technologies.
+						responsive front-end web applications while building back-end
+						technologies also.
 					</p>
 
 					<a
 						className='rounded-full shadow-lg shadow-[#e3573c] p-4  my-4 inline-block border border-[#e3573c] text-[#e3573c] hover:scale-105 hover:bg-[#e3573c] hover:text-[#fff] hover:shadow-gray-400 ease-in duration-500 font-bold'
 						target='_blank'
-						href='https://drive.google.com/file/d/1m5W3GYbvoAX-vyucBMnl7gJgS5tL_0tN/view?usp=sharing'
+						href='https://drive.google.com/u/0/uc?id=1m5W3GYbvoAX-vyucBMnl7gJgS5tL_0tN&export=download'
 						title='Resume'
 						download=''
 						rel='noopener noreferrer'
@@ -59,19 +57,7 @@ const Hero = () => {
 					</a>
 
 					<div className='flex items-center justify-between max-w-[330px] m-auto py-4'>
-						<div className='border border-[#e3573c] rounded-full shadow-lg text-[#e3573c] shadow-[#e3573c] p-6 cursor-pointer hover:scale-110 ease-in duration-500'>
-							<FaLinkedinIn />
-						</div>
-
-						<div className='border border-[#e3573c] rounded-full shadow-lg text-[#e3573c] shadow-[#e3573c] p-6 cursor-pointer hover:scale-110 ease-in duration-500'>
-							<FaGithub />
-						</div>
-						<div className='border border-[#e3573c] rounded-full shadow-lg text-[#e3573c] shadow-[#e3573c] p-6 cursor-pointer hover:scale-110 ease-in duration-500'>
-							<AiOutlineMail />
-						</div>
-						<div className='border border-[#e3573c] rounded-full shadow-lg text-[#e3573c] shadow-[#e3573c] p-6 cursor-pointer hover:scale-110 ease-in duration-500'>
-							<BsFillPersonLinesFill />
-						</div>
+						<Social />
 					</div>
 				</div>
 			</div>
