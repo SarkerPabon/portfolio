@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
 const Navbar = () => {
@@ -33,28 +34,41 @@ const Navbar = () => {
 			}
 		>
 			<div className='flex justify-between items-center w-full h-full px-2 2xl:px-16 container mx-auto'>
-				<img src='/assets/logo2.png' alt='Logo' width={100} height={50} />
+				<HashLink smooth to='/#'>
+					<img src='/assets/logo2.png' alt='Logo' width={100} height={50} />
+				</HashLink>
 				<div>
 					<ul className='hidden md:flex'>
 						<HashLink smooth to='/#'>
-							<li className='ml-10 text-sm uppercase hover:border-b'>Home</li>
+							<li className='ml-10 text-sm uppercase hover:border-b hover:border-[#e3573c] hover:text-[#e3573c] ease-in duration-300'>
+								Home
+							</li>
 						</HashLink>
 						<HashLink smooth to='/#about'>
-							<li className='ml-10 text-sm uppercase hover:border-b'>About</li>
+							<li className='ml-10 text-sm uppercase hover:border-b hover:border-[#e3573c] hover:text-[#e3573c] ease-in duration-300'>
+								About
+							</li>
 						</HashLink>
 						<HashLink smooth to='/#skills'>
-							<li className='ml-10 text-sm uppercase hover:border-b'>Skills</li>
+							<li className='ml-10 text-sm uppercase hover:border-b hover:border-[#e3573c] hover:text-[#e3573c] ease-in duration-300'>
+								Skills
+							</li>
 						</HashLink>
 						<HashLink smooth to='/#projects'>
-							<li className='ml-10 text-sm uppercase hover:border-b'>
+							<li className='ml-10 text-sm uppercase hover:border-b hover:border-[#e3573c] hover:text-[#e3573c] ease-in duration-300'>
 								Projects
 							</li>
 						</HashLink>
 						<HashLink smooth to='/#contact'>
-							<li className='ml-10 text-sm uppercase hover:border-b'>
+							<li className='ml-10 text-sm uppercase hover:border-b hover:border-[#e3573c] hover:text-[#e3573c] ease-in duration-300'>
 								Contact
 							</li>
 						</HashLink>
+						<Link to='/blog'>
+							<li className='ml-10 text-sm uppercase hover:border-b hover:border-[#e3573c] hover:text-[#e3573c] ease-in duration-300'>
+								Blog
+							</li>
+						</Link>
 					</ul>
 
 					{/* Hamburger Icon */}
@@ -84,7 +98,7 @@ const Navbar = () => {
 							<img src='/assets/logo2.png' alt='Logo' width={87} height={35} />
 							<div
 								onClick={handleNav}
-								className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer'
+								className='rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer '
 							>
 								<AiOutlineClose />
 							</div>
@@ -97,27 +111,42 @@ const Navbar = () => {
 						<div className='py-4 flex flex-col'>
 							<ul className='uppercase'>
 								<HashLink smooth to='/#'>
-									<li onClick={() => setNav(false)} className='py-4 text-sm'>
+									<li
+										onClick={() => setNav(false)}
+										className='py-4 text-sm hover:text-[#e3573c] ease-in duration-200'
+									>
 										Home
 									</li>
 								</HashLink>
 								<HashLink smooth to='/#about'>
-									<li onClick={() => setNav(false)} className='py-4 text-sm'>
+									<li
+										onClick={() => setNav(false)}
+										className='py-4 text-sm hover:text-[#e3573c] ease-in duration-200'
+									>
 										About
 									</li>
 								</HashLink>
 								<HashLink smooth to='/#skills'>
-									<li onClick={() => setNav(false)} className='py-4 text-sm'>
+									<li
+										onClick={() => setNav(false)}
+										className='py-4 text-sm hover:text-[#e3573c] ease-in duration-200'
+									>
 										Skills
 									</li>
 								</HashLink>
 								<HashLink smooth to='/#projects'>
-									<li onClick={() => setNav(false)} className='py-4 text-sm'>
+									<li
+										onClick={() => setNav(false)}
+										className='py-4 text-sm hover:text-[#e3573c] ease-in duration-200'
+									>
 										Porjects
 									</li>
 								</HashLink>
 								<HashLink smooth to='/#contact'>
-									<li onClick={() => setNav(false)} className='py-4 text-sm'>
+									<li
+										onClick={() => setNav(false)}
+										className='py-4 text-sm hover:text-[#e3573c] ease-in duration-200'
+									>
 										Contact
 									</li>
 								</HashLink>
@@ -149,7 +178,7 @@ const Navbar = () => {
 			<div className='hidden md:block fixed bottom-[90px] right-6 w-[40px]'>
 				<div className='flex flex-col items-center relative'>
 					<a
-						className='my-6 mx-auto text-base font-mono tracking-widest ease-in duration-300 hover:text-[#e3573c] after:content-[""] after:block after:w-[1px] after:h-[90px] after:my-0 after:mx-auto after:bg-gray-700  after:fixed after:bottom-0 after:right-11 after:hover:bg-[#e3573c]'
+						className='my-6 text-[#e3573c] mx-auto text-base font-mono tracking-widest ease-in duration-300 hover:text-[#6b1605] after:content-[""] after:block after:w-[1px] after:h-[90px] after:my-0 after:mx-auto after:bg-[#e3573c]  after:fixed after:bottom-0 after:right-11 after:hover:bg-[#6b1605]'
 						href='mailto:sarkerpabon@gmail.com'
 						style={{ writingMode: "vertical-rl" }}
 					>

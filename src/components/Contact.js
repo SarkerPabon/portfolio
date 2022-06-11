@@ -24,7 +24,7 @@ const Contact = () => {
 	return (
 		<div id='contact' className='w-full lg:h-screen'>
 			<div className='max-w-[1240px] m-auto px-2 py-16 w-full '>
-				<p className='text-xl tracking-widest uppercase text-[#5651e5]'>
+				<p className='text-xl tracking-widest uppercase text-[#e3573c]'>
 					Contact
 				</p>
 				<h2 className='py-4'>Get In Touch</h2>
@@ -35,7 +35,7 @@ const Contact = () => {
 							<div>
 								<img
 									className='rounded-xl hover:scale-105 ease-in duration-300'
-									src='https://images.unsplash.com/photo-1516387938699-a93567ec168e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2671&q=80'
+									src='/assets/contact.jpg'
 									alt='/'
 								/>
 							</div>
@@ -43,8 +43,8 @@ const Contact = () => {
 								<h2 className='py-2'>Pabon Sarker</h2>
 								<p>Full Stack Developer</p>
 								<p className='py-4'>
-									I am available for freelance or full-time positions. Contact
-									me and let's talk.
+									I am available for full-time positions. Contact me and let's
+									talk.
 								</p>
 							</div>
 							<div>
@@ -152,9 +152,9 @@ const Contact = () => {
 					</div>
 				</div>
 				<div className='flex justify-center py-12'>
-					<HashLink smooth to='/#'>
+					<HashLink smooth to='#top'>
 						<div className='rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300'>
-							<HiOutlineChevronDoubleUp className='text-[#5651e5]' size={30} />
+							<HiOutlineChevronDoubleUp className='text-[#e3573c]' size={30} />
 						</div>
 					</HashLink>
 				</div>

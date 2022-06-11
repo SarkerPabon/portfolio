@@ -1,7 +1,13 @@
 import { FiExternalLink } from "react-icons/fi";
-import { Link } from "react-router-dom";
 
-const ProjectItem = ({ title, backgroundImg, projectUrl, children }) => {
+const ProjectItem = ({
+	title,
+	backgroundImg,
+	projectUrl,
+	server,
+	client,
+	children,
+}) => {
 	return (
 		// <div className='relative flex items-center justify-center h-auto w-full shadow-lg shadow-gray-400 rounded-xl p-4 group hover:bg-gradient-to-r from-[#5651e5] to-[#709dff]'>
 		<div className='relative  h-auto w-full shadow-lg shadow-gray-400 rounded-xl  group  hover:bg-gradient-to-r from-[#5651e5] to-[#709dff]'>
@@ -31,28 +37,39 @@ const ProjectItem = ({ title, backgroundImg, projectUrl, children }) => {
 						Github Links
 					</p>
 					<div className='flex justify-around py-2'>
-						<button
-							type='button'
-							className='text-sm bg-white text-gray-700 p-2 font-bold cursor-pointer rounded-lg'
-						>
-							Server
-							<FiExternalLink className='text-sm ml-1 inline mb-1' />
-						</button>
-						<button
-							type='button'
-							className='text-sm bg-white text-gray-700 p-2 font-bold cursor-pointer rounded-lg'
-						>
-							Client
-							<FiExternalLink className='text-sm ml-1 inline mb-1' />
-						</button>
+						{server ? (
+							<a
+								href={server}
+								target='_blank'
+								rel='noreferrer'
+								type='button'
+								className='text-sm bg-white text-gray-700 p-2 font-bold cursor-pointer rounded-lg'
+							>
+								Server
+								<FiExternalLink className='text-sm ml-1 inline mb-1' />
+							</a>
+						) : (
+							""
+						)}
+						{client ? (
+							<button
+								type='button'
+								className='text-sm bg-white text-gray-700 p-2 font-bold cursor-pointer rounded-lg'
+							>
+								Client
+								<FiExternalLink className='text-sm ml-1 inline mb-1' />
+							</button>
+						) : (
+							""
+						)}
 					</div>
 				</div>
-				<Link to={projectUrl}>
+				<a href={projectUrl} target='_blank' rel='noreferrer'>
 					<p className='text-center py-3 rounded-lg bg-white text-gray-700 font-bold text-lg cursor-pointer'>
 						Visit Site
 						<FiExternalLink className='ml-1 inline mb-1' />
 					</p>
-				</Link>
+				</a>
 			</div>
 		</div>
 	);
