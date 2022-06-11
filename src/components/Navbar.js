@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from "react-icons/ai";
 // import { BsFillPersonLinesFill } from "react-icons/bs";
-import { FaGithub, FaLinkedinIn, FaFacebookSquare } from "react-icons/fa";
+import { FaFacebookSquare, FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
@@ -75,7 +75,7 @@ const Navbar = () => {
 							rel='noreferrer'
 							className=''
 						>
-							<li className='border border-[#e3573c] rounded-lg px-4 text-[#e3573c] ml-10 text-sm uppercase hover:border-b hover:border-[#e3573c] hover:text-[#e3573c] ease-in duration-300'>
+							<li className='border border-[#e3573c] rounded-lg px-4 text-[#e3573c] ml-10 text-sm uppercase hover:border-b hover:border-[#e3573c] hover:bg-[#e3573c] hover:text-white ease-in duration-300'>
 								Resume
 							</li>
 						</a>
@@ -118,7 +118,7 @@ const Navbar = () => {
 								Let's build something legendary together
 							</p>
 						</div>
-						<div className='py-4 flex flex-col'>
+						<div className='py-2 flex flex-col'>
 							<ul className='uppercase'>
 								<HashLink smooth to='/#'>
 									<li
@@ -172,16 +172,17 @@ const Navbar = () => {
 									href='https://drive.google.com/file/d/1m5W3GYbvoAX-vyucBMnl7gJgS5tL_0tN/view?usp=sharing'
 									target='_blank'
 									rel='noreferrer'
+									className=''
 								>
 									<li
 										onClick={() => setNav(false)}
-										className='py-3 text-sm hover:text-[#e3573c] ease-in duration-200'
+										className='inline-block font-bold border-b border-[#e3573c] pt-3 py-1 text-sm text-[#e3573c]  hover:text-gray-900 hover:border-gray-900 ease-in duration-200'
 									>
 										Resume
 									</li>
 								</a>
 							</ul>
-							<div className='pt-5'>
+							<div className='pt-3'>
 								<p className='uppercase tracking-wide text-[#5651e5] text-center'>
 									Let's Connect
 								</p>
