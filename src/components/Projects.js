@@ -140,7 +140,7 @@ const Projects = () => {
 									</div>
 
 									<div className='mr-2 mb-2 rounded-full px-3 py-1 text-xs bg-green-400 text-green-900 font-bold'>
-										Leaflet JS
+										React Leaflet
 									</div>
 
 									<div className='mr-2 mb-2 rounded-full px-3 py-1 text-xs bg-green-400 text-green-900 font-bold'>
@@ -159,10 +159,14 @@ const Projects = () => {
 
 								<ul className='text-sm mt-4 list-disc list-inside leading-relaxed'>
 									<li>
-										Fully Responsive website for Desktop, Tabs and Laptops
+										Fully Responsive website for Desktop, Tabs and Mobile
+										Deivices
 									</li>
 
-									<li>This website has busness summary section</li>
+									<li>
+										This website has busness summary section which was mady by
+										React-CountUp and React Visibility Sensor
+									</li>
 
 									<li>This website has google map</li>
 								</ul>
